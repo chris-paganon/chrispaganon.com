@@ -1,0 +1,32 @@
+export const portfolio = [
+  {
+    id: 1,
+    name: "Panier Québécois",
+    slug: "panier-quebecois",
+    shortDescription: "Online grocery e-commerce platform",
+    startDate: "2020-04-01",
+    endDate: "now",
+    image: "src/assets/images/portfolio/panier-quebecois-screenshot.JPG",
+    content: "Online grocery e-commerce platform long description",
+  },
+  {
+    id: 2,
+    name: "Precious Plastic Montréal",
+    slug: "ppmtl",
+    shortDescription: "Local small scale recycling non-for-profit",
+    startDate: "2019-06-01",
+    endDate: "now",
+    image: "src/assets/images/portfolio/ppmtl-screenshot.jpg",
+    content: "Local small scale recycling non-for-profit long description",
+  },
+  {
+    id: 3,
+    name: "Pure Santé",
+    slug: "pure-sante",
+    shortDescription: "Service d'ostéopathie et massothérapie B2B",
+    startDate: "2019-04-01",
+    endDate: "now",
+    image: "src/assets/images/portfolio/pure-sante-screenshot.jpg",
+    content: "Service d'ostéopathie et massothérapie B2B long description",
+  },
+];
