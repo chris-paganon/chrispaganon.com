@@ -30,7 +30,9 @@ h5,
 h6,
 th,
 td,
+p,
 caption {
+  font-family: 'Roboto', Serif;
   font-weight: normal;
 }
 

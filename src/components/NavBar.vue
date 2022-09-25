@@ -8,3 +8,12 @@
     </ul>
   </nav>
 </template>
+
+<style scoped>
+ul {
+  display: flex;
+}
+li {
+  margin-right: 10px;
+}
+</style>

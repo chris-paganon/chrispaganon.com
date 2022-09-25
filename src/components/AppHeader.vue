@@ -10,6 +10,20 @@ export default {
 
 <template>
   <header>
+    <nav>C</nav>
     <NavBar />
   </header>
 </template>
+
+<style scoped>
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+nav {
+  padding: 20px;
+}
+</style>

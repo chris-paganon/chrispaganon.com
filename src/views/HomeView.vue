@@ -1,7 +1,54 @@
-<script></script>
+<script>
+import Portfolio from "@/components/Portfolio.vue";
+
+export default {
+  components: {
+    Portfolio,
+  },
+};
+</script>
 
 <template>
   <main>
-    <h1>Hi</h1>
+    <section class="hero-banner">
+      <h1>Chris Paganon, Freelance Web Developer & Business Owner</h1>
+    </section>
+    <section class="introduction">
+      <p>I build websites and automation tools for SMBs and non-for profits.</p>
+      <img src="@/assets/images/me.jpg" alt="me" />
+    </section>
+    <section class="portfolio_wrapper">
+      <Portfolio />
+    </section>
   </main>
 </template>
+
+<style scoped>
+.hero-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  background-color: antiquewhite;
+  padding: 0 20%;
+}
+h1 {
+  font-size: 50px;
+}
+
+.introduction {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 150px 20px;
+}
+p {
+  font-size: 30px;
+  margin: 0 10px;
+}
+img {
+  width: 200px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+</style>
