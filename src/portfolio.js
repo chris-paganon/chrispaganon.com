@@ -7,7 +7,7 @@ export const portfolio = [
     shortDescription: "Online grocery e-commerce platform",
     startDate: "2020-04-01",
     endDate: "now",
-    image: "src/assets/images/portfolio/panier-quebecois-screenshot.JPG",
+    image: "/src/assets/images/portfolio/panier-quebecois-screenshot.JPG",
     content: "Online grocery e-commerce platform long description",
   },
   {
@@ -18,7 +18,7 @@ export const portfolio = [
     shortDescription: "Local small scale recycling non-for-profit",
     startDate: "2019-06-01",
     endDate: "now",
-    image: "src/assets/images/portfolio/ppmtl-screenshot.jpg",
+    image: "/src/assets/images/portfolio/ppmtl-screenshot.jpg",
     content: "Local small scale recycling non-for-profit long description",
   },
   {
@@ -29,7 +29,7 @@ export const portfolio = [
     shortDescription: "Service d'ostéopathie et massothérapie B2B",
     startDate: "2019-04-01",
     endDate: "now",
-    image: "src/assets/images/portfolio/pure-sante-screenshot.jpg",
+    image: "/src/assets/images/portfolio/pure-sante-screenshot.jpg",
     content: "Service d'ostéopathie et massothérapie B2B long description",
   },
 ];

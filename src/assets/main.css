@@ -2,6 +2,8 @@ html,
 body,
 div,
 form,
+ul,
+li,
 label {
   margin: 0;
   padding: 0;
