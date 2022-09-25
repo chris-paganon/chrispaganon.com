@@ -1,18 +1,15 @@
 <script>
-import NavBar from "./components/NavBar.vue";
+import AppHeader from "./components/AppHeader.vue";
 
 export default {
   components: {
-    NavBar,
+    AppHeader,
   },
 };
 </script>
 
 <template>
-  <header>
-    <NavBar />
-  </header>
-
+  <AppHeader />
   <RouterView />
 </template>
 
