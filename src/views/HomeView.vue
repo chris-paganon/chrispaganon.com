@@ -26,11 +26,14 @@ export default {
       <section class="contact-me-wrapper content-section" id="contact-me">
         <h2 class="contact-me-heading">Contact Me</h2>
         <ul>
-          <li>
+          <li class="contact-info">
             By e-mail here:
             <a href="mailto:cpaganon@gmail.com">cpaganon@gmail.com</a>
           </li>
-          <li>By phone here: <a href="tel:+15144316333">+1 514 431 6333</a></li>
+          <li class="contact-info">
+            By phone here:
+            <a href="tel:+15144316333">+1 514 431 6333</a>
+          </li>
         </ul>
       </section>
     </div>
@@ -76,9 +79,8 @@ img {
   border-bottom: 1px solid gray;
 }
 
-#contact-me-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
+.contact-info {
+  font-size: 22px;
+  margin: 15px 0;
 }
 </style>
