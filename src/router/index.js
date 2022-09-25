@@ -22,12 +22,15 @@ const router = createRouter({
       component: ProjectContent,
     },
   ],
-  scrollBehavior(to) {
-    console.log(to);
+  scrollBehavior(to, from, savedPosition) {
+    console.log(savedPosition);
     if (to.hash) {
       return {
         el: to.hash,
+        behavior: "smooth",
       };
+    } else if (savedPosition) {
+      return savedPosition;
     }
   },
 });
