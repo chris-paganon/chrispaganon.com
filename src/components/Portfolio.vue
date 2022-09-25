@@ -13,11 +13,16 @@ export default {
 <template>
   <h2 class="portfolio-heading">My Portfolio</h2>
   <div class="portfolio-grid-wrapper">
-    <article v-for="project in portfolio" class="portfolio-card">
+    <router-link
+      class="portfolio-card"
+      v-for="project in portfolio"
+      :to="`project/${project.slug}`"
+      :key="project.id"
+    >
       <h3>{{ project.name }}</h3>
       <p>{{ project.shortDescription }}</p>
       <img :src="`${project.image}`" />
-    </article>
+    </router-link>
   </div>
 </template>
 
@@ -27,8 +32,16 @@ export default {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 10px;
 }
-
 img {
   width: 100%;
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-decoration: none;
+  color: black;
 }
 </style>
