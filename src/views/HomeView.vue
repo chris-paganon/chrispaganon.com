@@ -25,14 +25,13 @@ export default {
       </section>
       <section class="contact-me-wrapper content-section" id="contact-me">
         <h2 class="contact-me-heading">Contact Me</h2>
-        <form id="contact-me-form">
-          <label for="email">E-mail</label>
-          <input type="text" name="email" />
-          <label for="full-name">Full Name</label>
-          <input type="text" name="full-name" />
-          <label for="message">Message</label>
-          <textarea name="message" rows="4"></textarea>
-        </form>
+        <ul>
+          <li>
+            By e-mail here:
+            <a href="mailto:cpaganon@gmail.com">cpaganon@gmail.com</a>
+          </li>
+          <li>By phone here: <a href="tel:+15144316333">+1 514 431 6333</a></li>
+        </ul>
       </section>
     </div>
   </main>
