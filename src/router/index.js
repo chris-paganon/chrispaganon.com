@@ -16,6 +16,14 @@ const router = createRouter({
       component: ContactMe,
     },
   ],
+  scrollBehavior(to) {
+    console.log(to);
+    if (to.hash) {
+      return {
+        el: to.hash,
+      };
+    }
+  },
 });
 
 export default router;

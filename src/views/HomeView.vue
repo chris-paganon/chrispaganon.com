@@ -14,14 +14,25 @@ export default {
       <h1>Chris Paganon, Freelance Web Developer & Business Owner</h1>
     </section>
     <div class="home-content-wrapper">
-      <section class="introduction">
+      <section class="introduction content-section">
         <p>
           I build websites and automation tools for SMBs and non-for profits.
         </p>
         <img src="@/assets/images/me.jpg" alt="me" />
       </section>
-      <section class="portfolio-wrapper">
+      <section class="portfolio-wrapper content-section">
         <Portfolio />
+      </section>
+      <section class="contact-me-wrapper content-section" id="contact-me">
+        <h2 class="contact-me-heading">Contact Me</h2>
+        <form id="contact-me-form">
+          <label for="email">E-mail</label>
+          <input type="text" name="email" />
+          <label for="full-name">Full Name</label>
+          <input type="text" name="full-name" />
+          <label for="message">Message</label>
+          <textarea name="message" rows="4"></textarea>
+        </form>
       </section>
     </div>
   </main>
@@ -41,19 +52,19 @@ export default {
   background-color: antiquewhite;
   padding: 0 20%;
 }
-h1 {
-  font-size: 50px;
+
+.content-section {
+  padding: 60px 0;
 }
 
 .introduction {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 150px 20px;
+  padding: 150px 0;
 }
-p {
-  font-size: 30px;
-  margin: 0 10px;
+.introduction p {
+  font-size: 2.2em;
 }
 img {
   width: 200px;
@@ -62,7 +73,13 @@ img {
 }
 
 .portfolio-wrapper {
-  padding: 60px 0;
   border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+#contact-me-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
 }
 </style>

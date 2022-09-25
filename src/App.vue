@@ -13,4 +13,18 @@ export default {
   <RouterView />
 </template>
 
-<style></style>
+<style>
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
+p {
+  font-size: 20px;
+  margin: 0 10px;
+}
+</style>
