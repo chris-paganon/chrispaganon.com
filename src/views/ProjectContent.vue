@@ -1,15 +1,15 @@
 <template>
-  <article>
+  <section class="hero-banner">
     <h1>{{ getProjectData.name }}</h1>
-    <div class="written-content">
-      <ul>
-        <li>From: {{ getProjectData.startDate }}</li>
-        <li>Until: {{ getProjectData.endDate }}</li>
-      </ul>
-      <a :href="getProjectData.url" target="_blank">Visit the website</a>
-      <p>{{ getProjectData.content }}</p>
-    </div>
+  </section>
+  <article>
+    <ul>
+      <li>From: {{ getProjectData.startDate }}</li>
+      <li>Until: {{ getProjectData.endDate }}</li>
+    </ul>
+    <p>{{ getProjectData.content }}</p>
     <img :src="getProjectData.image" />
+    <a :href="getProjectData.url" target="_blank">Visit the website</a>
   </article>
 </template>
 
@@ -37,19 +37,18 @@ export default {
 <style scoped>
 article {
   max-width: 1024px;
-  margin: auto;
+  margin: 40px auto;
 }
 a,
 li {
   font-size: 1.5em;
 }
 p {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
-img {
-  max-width: 800px;
-  display: block;
+.hero-banner {
+  min-height: 200px;
 }
 
 ul {
@@ -58,5 +57,10 @@ ul {
 }
 li {
   margin-right: 15px;
+}
+
+img {
+  max-width: 800px;
+  display: block;
 }
 </style>

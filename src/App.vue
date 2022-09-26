@@ -27,4 +27,13 @@ p {
   font-size: 20px;
   margin: 0 10px;
 }
+
+.hero-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  background-color: antiquewhite;
+  padding: 0 20%;
+}
 </style>

@@ -46,15 +46,6 @@ export default {
   margin: auto;
   padding: 0 40px;
 }
-.hero-banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 400px;
-  background-color: antiquewhite;
-  padding: 0 20%;
-}
-
 .content-section {
   padding: 60px 0;
 }
