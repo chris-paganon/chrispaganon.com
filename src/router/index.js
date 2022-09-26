@@ -23,12 +23,12 @@ const router = createRouter({
     },
   ],
   scrollBehavior(to, from, savedPosition) {
-    console.log(savedPosition);
     if (to.hash) {
-      return {
-        el: to.hash,
-        behavior: "smooth",
-      };
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve({ el: to.hash, behavior: "smooth" });
+        }, 100);
+      });
     } else if (savedPosition) {
       return savedPosition;
     }
