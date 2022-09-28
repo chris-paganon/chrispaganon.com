@@ -16,7 +16,7 @@ export default {
     <div class="home-content-wrapper">
       <section class="introduction content-section">
         <p>
-          After 2 years building the e-commerce platform of our online grocery store at <a href="https://panierquebecois.ca" target="_blank">Panier Québécois</a>, I now help SMBs and non-for profits build or improve their Website.
+          After 2 years building our e-commerce platform at <a href="https://panierquebecois.ca" target="_blank">Panier Québécois</a>, I now help SMBs and non-for profits build or improve their Website.
         </p>
         <img src="src/assets/images/me.jpg" alt="me" />
       </section>
