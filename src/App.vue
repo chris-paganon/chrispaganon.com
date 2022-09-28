@@ -37,7 +37,7 @@ p {
   justify-content: center;
   align-items: center;
   min-height: 500px;
-  background-color: antiquewhite;
+  background-color: #c9e5f9;
   padding: 0 20%;
 }
 </style>
