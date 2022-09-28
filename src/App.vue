@@ -25,11 +25,15 @@ h2 {
   margin-bottom: 10px;
 }
 h3 {
-  font-size: 35px;
-  margin: 20px;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 p {
   font-size: 20px;
+}
+input, 
+textarea {
+  font-size: 18px;
 }
 
 .hero-banner {

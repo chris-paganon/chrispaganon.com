@@ -31,7 +31,9 @@ p,
 a,
 li,
 label,
-caption {
+caption,
+input, 
+textarea {
   font-family: 'Ubuntu', Serif;
   margin: 0;
 }
