@@ -20,9 +20,47 @@ export default {
         </p>
         <img src="src/assets/images/me.jpg" alt="me" />
       </section>
-      <section class="portfolio-section-wrapper content-section" id="portfolio">
-        <Portfolio />
+      <section class="services-section content-section">
+        <h2>What can I do for you?</h2>
+        <p>
+          I specialize in Wordpress web development but I can also help you with your marketing startegy!
+        </p>
+        <div class="services-wrapper">
+          <div class="service-wrapper">
+            <h3>Build a new website</h3>
+            <ul>
+              <li>Build a new Website using Wordpress or Woocommerce</li>
+              <li>Simple one pager, complex platforms or anything in between</li>
+              <li>Focused on delivering real world results for your project</li>
+              <li>All the tools to let you make modifications yourself in the futur</li>
+            </ul>
+          </div>
+          <div class="service-wrapper">
+            <h3>Improve existing website</h3>
+            <ul>
+              <li>Improving an existing Wordpress/Woocommerce website</li>
+              <li>New features requests</li>
+              <li>Improving speed and Search Engine visibility (SEO)</li>
+              <li>Complete overhaul</li>
+              <li>Server migrations and other backend problems resolution</li>
+            </ul>
+          </div>
+          <div class="service-wrapper">
+            <h3>Marketing startegy</h3>
+            <ul>
+              <li>Identifying key metrics to track</li>
+              <li>Improving your Social Media strategy</li>
+              <li>Improving or developing a paid media startegy (FB ads, Google AdWords...)</li>
+              <li>Improving your workflow and your software tools</li>
+            </ul>
+          </div>
+        </div>
       </section>
+      <div class="background-section-wrapper portfolio-section-background">
+        <section class="portfolio-section-wrapper content-section" id="portfolio">
+          <Portfolio />
+        </section>
+      </div>
       <section class="contact-me-wrapper content-section" id="contact-me">
         <h2 class="contact-me-heading">Contact Me</h2>
         <ul>
@@ -41,13 +79,14 @@ export default {
 </template>
 
 <style scoped>
-.home-content-wrapper {
-  max-width: 1024px;
-  margin: auto;
-  padding: 0 40px;
-}
 .content-section {
-  padding: 60px 0;
+  margin: auto;
+  max-width: 1024px;
+  padding: 60px 40px;
+}
+.background-section-wrapper {
+  width: 100%;
+  background-color: rgb(255, 251, 246);
 }
 
 .introduction {
@@ -74,9 +113,15 @@ img:hover {
   transform: translateY(-10px) scale(1.1, 1.1);
 }
 
-.portfolio-section-wrapper {
+.services-content-section {
   border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+}
+.services-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.service-wrapper {
+  text-align: center;
 }
 
 .contact-info {
