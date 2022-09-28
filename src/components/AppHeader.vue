@@ -16,6 +16,9 @@ export default {
 
 <style scoped>
 header {
+  position: absolute;
+  width: 100%;
+  min-height: 90px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
