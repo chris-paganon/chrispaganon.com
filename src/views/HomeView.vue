@@ -23,35 +23,32 @@ export default {
       <section class="services-section content-section">
         <h2>What can I do for you?</h2>
         <p>
-          I specialize in Wordpress web development but I can also help you with your marketing startegy!
+          I specialize in <strong>Wordpress Web Development</strong> but I can also help you with your marketing startegy!
         </p>
         <div class="services-wrapper">
           <div class="service-wrapper">
-            <h3>Build a new website</h3>
+            <h3>Build a new Website</h3>
             <ul>
-              <li>Build a new Website using Wordpress or Woocommerce</li>
-              <li>Simple one pager, complex platforms or anything in between</li>
-              <li>Focused on delivering real world results for your project</li>
-              <li>All the tools to let you make modifications yourself in the futur</li>
+              <li>Get leads & customers</li>
+              <li>Built on a strong base</li>
+              <li>Best practices for Wordpress</li>
             </ul>
           </div>
           <div class="service-wrapper">
-            <h3>Improve existing website</h3>
+            <h3>Improve existing Website</h3>
             <ul>
-              <li>Improving an existing Wordpress/Woocommerce website</li>
               <li>New features requests</li>
-              <li>Improving speed and Search Engine visibility (SEO)</li>
+              <li>Improve speed & SEO</li>
               <li>Complete overhaul</li>
-              <li>Server migrations and other backend problems resolution</li>
             </ul>
           </div>
           <div class="service-wrapper">
-            <h3>Marketing startegy</h3>
+            <h3>Marketing Startegy</h3>
             <ul>
-              <li>Identifying key metrics to track</li>
-              <li>Improving your Social Media strategy</li>
-              <li>Improving or developing a paid media startegy (FB ads, Google AdWords...)</li>
-              <li>Improving your workflow and your software tools</li>
+              <li>Identifying key metrics</li>
+              <li>Social Media strategy</li>
+              <li>Paid media startegy</li>
+              <li>Improved workflow and tools</li>
             </ul>
           </div>
         </div>
@@ -113,15 +110,17 @@ img:hover {
   transform: translateY(-10px) scale(1.1, 1.1);
 }
 
-.services-content-section {
+.services-section {
   border-top: 1px solid gray;
 }
 .services-wrapper {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 .service-wrapper {
   text-align: center;
+  border: 1px solid gray;
 }
 
 .contact-info {
