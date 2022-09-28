@@ -1,5 +1,6 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
+import "./assets/main.css";
 
 export default {
   components: {
