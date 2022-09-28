@@ -1,11 +1,13 @@
 <script>
 import Portfolio from "@/components/Portfolio.vue";
 import Services from "@/components/Services.vue";
+import ContactMe from "@/components/ContactMe.vue";
 
 export default {
   components: {
     Portfolio,
     Services,
+    ContactMe,
   },
 };
 </script>
@@ -32,17 +34,7 @@ export default {
         </section>
       </div>
       <section class="contact-me-wrapper content-section" id="contact-me">
-        <h2 class="contact-me-heading">Contact Me</h2>
-        <ul>
-          <li class="contact-info">
-            By e-mail here:
-            <a href="mailto:cpaganon@gmail.com">cpaganon@gmail.com</a>
-          </li>
-          <li class="contact-info">
-            By phone here:
-            <a href="tel:+15144316333">+1 514 431 6333</a>
-          </li>
-        </ul>
+        <ContactMe />
       </section>
     </div>
   </main>
@@ -89,10 +81,5 @@ img:hover {
 }
 .services-section {
   text-align: center;
-}
-
-.contact-info {
-  font-size: 22px;
-  margin: 15px 0;
 }
 </style>
