@@ -15,7 +15,9 @@ export default {
 
 <style>
 h1 {
-  font-size: 50px;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 1.25;
 }
 h2 {
   font-size: 40px;
@@ -32,7 +34,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 400px;
+  min-height: 500px;
   background-color: antiquewhite;
   padding: 0 20%;
 }
