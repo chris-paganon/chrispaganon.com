@@ -57,7 +57,7 @@ export default {
   padding: 150px 0;
 }
 .introduction p {
-  font-size: 2.2em;
+  font-size: 2em;
 }
 img {
   width: 200px;

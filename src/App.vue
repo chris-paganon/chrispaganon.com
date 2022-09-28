@@ -21,10 +21,11 @@ h1 {
   line-height: 1.25;
 }
 h2 {
-  font-size: 40px;
+  font-size: 45px;
 }
 h3 {
-  font-size: 30px;
+  font-size: 35px;
+  margin: 20px;
 }
 p {
   font-size: 20px;

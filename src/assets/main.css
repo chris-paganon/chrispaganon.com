@@ -38,6 +38,7 @@ li,
 label,
 caption {
   font-family: 'Ubuntu', Serif;
+  margin: 0;
 }
 
 img {
