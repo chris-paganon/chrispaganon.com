@@ -20,7 +20,7 @@ export default {
         </p>
         <img src="src/assets/images/me.jpg" alt="me" />
       </section>
-      <section class="portfolio-section-wrapper content-section">
+      <section class="portfolio-section-wrapper content-section" id="portfolio">
         <Portfolio />
       </section>
       <section class="contact-me-wrapper content-section" id="contact-me">
