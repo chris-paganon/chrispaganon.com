@@ -16,11 +16,11 @@ export default {
     <div class="home-content-wrapper">
       <section class="introduction content-section">
         <p>
-          I build websites and automation tools for SMBs and non-for profits.
+          After building the e-commerce platform of our online grocery store at Panier Québécois, I now build websites and automation tools for SMBs and non-for profits.
         </p>
         <img src="@/assets/images/me.jpg" alt="me" />
       </section>
-      <section class="portfolio-wrapper content-section">
+      <section class="portfolio-section-wrapper content-section">
         <Portfolio />
       </section>
       <section class="contact-me-wrapper content-section" id="contact-me">
@@ -65,7 +65,7 @@ img {
   margin: 0 10px;
 }
 
-.portfolio-wrapper {
+.portfolio-section-wrapper {
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
 }
