@@ -19,7 +19,7 @@ export default {
       :to="`project/${project.slug}`"
       :key="project.id"
     >
-    <img :src="`${project.image}`" />
+      <img :src="`${project.image}`" />
       <div class="portfolio-card-text-wrapper">
         <h3>{{ project.name }}</h3>
         <p>{{ project.shortDescription }}</p>
@@ -49,12 +49,18 @@ img {
   align-items: flex-start;
   text-decoration: none;
   color: black;
+  overflow: hidden;
+  transition: transform 1s;
+}
+.portfolio-card:hover {
+  transform: scale(1.02, 1.02);
 }
 .portfolio-card:first-child {
   width: 100%;
 }
 
 .portfolio-card-text-wrapper {
+  visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -67,6 +73,12 @@ img {
   color: white;
   background-color: rgba(0, 0, 0, 0.45);
   border-radius: 10px;
+  transform: translateY(100%);
+  transition: transform 750ms ease-out, visibility 750ms ease-out;
+}
+.portfolio-card:hover .portfolio-card-text-wrapper {
+  visibility: visible;
+  transform: translateY(0);
 }
 
 </style>
