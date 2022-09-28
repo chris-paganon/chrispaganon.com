@@ -22,6 +22,7 @@ h1 {
 }
 h2 {
   font-size: 45px;
+  margin-bottom: 10px;
 }
 h3 {
   font-size: 35px;
@@ -29,7 +30,6 @@ h3 {
 }
 p {
   font-size: 20px;
-  margin: 0 10px;
 }
 
 .hero-banner {

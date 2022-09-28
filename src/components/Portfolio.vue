@@ -12,6 +12,7 @@ export default {
 
 <template>
   <h2 class="portfolio-heading">My Portfolio</h2>
+  <p>Find out more about my current and past projects here...</p>
   <div class="portfolio-wrapper">
     <router-link
       class="portfolio-card"
@@ -33,6 +34,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-top: 35px;
 }
 img {
   width: 100%;
