@@ -22,7 +22,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #c9e5f9;
+  background-color: transparent;
 }
 
 nav {

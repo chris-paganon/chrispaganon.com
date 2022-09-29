@@ -1,15 +1,19 @@
 <template>
-  <section class="hero-banner">
+  <section class="hero-banner" :style="{backgroundColor: `${getProjectData.color}`}">
     <h1>{{ getProjectData.name }}</h1>
   </section>
   <article>
     <ul>
       <li>From: {{ getProjectData.startDate }}</li>
       <li>Until: {{ getProjectData.endDate }}</li>
+      <li><a :href="getProjectData.url" target="_blank">Visit the website</a></li>
     </ul>
-    <p>{{ getProjectData.content }}</p>
+    <template v-for="paragraph in getProjectData.content" :key="paragraph.id">
+      <p v-if="paragraph.type === 'p'">
+        {{ paragraph.text }}
+      </p>
+    </template>
     <img :src="getProjectData.image" />
-    <a :href="getProjectData.url" target="_blank">Visit the website</a>
   </article>
 </template>
 
@@ -41,26 +45,34 @@ article {
 }
 a,
 li {
-  font-size: 1.5em;
+  font-size: 25px;
 }
 p {
   margin: 20px 0;
 }
 
 .hero-banner {
-  min-height: 200px;
+  min-height: 300px;
 }
 
 ul {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 li {
-  margin-right: 15px;
+  padding: 0 15px;
+}
+li:not(:last-child) {
+  border-right: 1px solid gray;
+}
+li:first-child {
+  padding-left: 0;
 }
 
 img {
   max-width: 800px;
   display: block;
+  margin: 60px auto;
+  max-width: 600px;
 }
 </style>
