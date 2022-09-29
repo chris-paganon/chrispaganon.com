@@ -6,7 +6,7 @@
       <li><router-link to="/">Home</router-link></li>
       <li><router-link to="/#portfolio">Portfolio</router-link></li>
       <li>
-        <router-link to="/#contact-me" class="contact-me-btn">
+        <router-link to="/#contact-me" class="contact-me-btn button">
           Let's Talk
         </router-link>
       </li>
@@ -35,18 +35,5 @@ a:not(.contact-me-btn) {
 }
 a:not(.contact-me-btn):hover {
   letter-spacing: 2.5px;
-}
-
-.contact-me-btn {
-  display: block;
-  background-color: black;
-  color: white;
-  padding: 15px 25px;
-  border-radius: 25px;
-  transition: background-color 250ms ease-out, transform 250ms ease-out;
-}
-.contact-me-btn:hover {
-  background-color: rgb(44, 44, 44);
-  transform: scale(1.03, 1.03);
 }
 </style>

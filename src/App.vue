@@ -36,6 +36,24 @@ textarea {
   font-size: 18px;
 }
 
+.button {
+  display: block;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: auto;
+  width: fit-content;
+  transition: background-color 250ms ease-out, transform 250ms ease-out;
+}
+.button:hover {
+  background-color: rgb(44, 44, 44);
+  transform: scale(1.03, 1.03);
+}
+
 .hero-banner {
   display: flex;
   justify-content: center;

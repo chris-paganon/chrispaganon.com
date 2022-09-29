@@ -10,6 +10,7 @@
         <input type="email" name="email" id="email" />
         <label for="name">Tell me about your project:</label>
         <textarea name="description" id="description" rows="4" placeholder='Something like "I would like to add pictures from my Instagram to my existing website..."'></textarea>
+        <button class="button">Send</button>
       </form> 
     </div>
     <div class="contact-me-details contact-me-col">
