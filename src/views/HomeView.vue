@@ -22,7 +22,7 @@ export default {
         <p>
           After 2 years building our e-commerce platform at <a href="https://panierquebecois.ca" target="_blank">Panier Québécois</a>, I now help SMBs and non-for profits build or improve their Website.
         </p>
-        <img src="src/assets/images/me.jpg" alt="me" />
+        <img src="/src/assets/images/me.jpg" alt="me" />
       </section>
       <hr class="separator" />
       <section class="services-section content-section">
