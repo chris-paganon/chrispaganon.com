@@ -12,7 +12,10 @@ export default {
 
 <template>
   <h2 class="portfolio-heading">My Portfolio</h2>
-  <p>Find out more about my current and past projects here...</p>
+  <p class="portfolio-intro"><strong>I built my first website in 2016</strong> for a 3D printing University project. Since then I built and managed <strong>several websites</strong> for local and international projects: a crepes catering project, a B2B massage therapy and ostheopathie service, a local bowling in Colombia and a small-scale plastic recycling community in Montréal.</p>
+  <p class="portfolio-intro">In 2020, <strong>I co-founded the first online farmer's market in Montréal</strong>: <a href="https://panierquebecois.ca" target="_blank">Panier Québécois</a>. I have been developping, improving and maintaining our website ever since (along managing our business' startegy, marketing and operations with my lovely co-founders).</p>
+  <p class="portfolio-intro">As our business doesn't require a full-time developper anymore, I am now putting my experience in web development, entrepreneurship and marketing to good use: <strong>helping you build your online presence!</strong></p>
+  <h3 class="portfolio-sub-heading">Find out more about a few of my projects below:</h3>
   <div class="portfolio-wrapper">
     <router-link
       class="portfolio-card"
@@ -39,6 +42,15 @@ export default {
 img {
   width: 100%;
   border-radius: 10px;
+}
+
+.portfolio-intro {
+  margin-bottom: 30px;
+}
+
+.portfolio-sub-heading {
+  margin: 80px 0 30px 0;
+  text-align: center;
 }
 
 .portfolio-card {

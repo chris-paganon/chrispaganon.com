@@ -22,18 +22,28 @@ h1 {
 }
 h2 {
   font-size: 45px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 h3 {
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 p {
   font-size: 20px;
+  margin-bottom: 20px;
 }
 input, 
 textarea {
   font-size: 18px;
+}
+
+p a {
+  display: inline-block;
+  color: black;
+  transition: transform 150ms ease-out;
+}
+p a:hover {
+  transform: skew(-1.5deg, -1.5deg);
 }
 
 .button {
@@ -41,6 +51,7 @@ textarea {
   cursor: pointer;
   background-color: black;
   color: white;
+  text-decoration: none;
   padding: 15px 25px;
   border-radius: 25px;
   font-size: 16px;

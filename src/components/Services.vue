@@ -46,11 +46,15 @@
       </tr>
     </tbody>
   </table>
+  <p><em>No fuss & no extra fees. I am practical and down to earth. I build useful tools to get mesurable results.</em></p>
+  <router-link to="/#contact-me" class="contact-me-btn button">
+    Let's Talk
+  </router-link>
 </template>
 
 <style scoped>
 table {
-  margin: 40px auto;
+  margin: 60px auto 40px auto;
   max-width: 100%;
   border: 1px solid gray;
   border-radius: 15px;
@@ -75,5 +79,11 @@ li {
 .icon {
   font-size: 40px;
   margin-bottom: 20px;
+}
+
+a {
+  margin: 60px auto 20px auto;
+  font-size: 20px;
+  border-radius: 30px;
 }
 </style>
