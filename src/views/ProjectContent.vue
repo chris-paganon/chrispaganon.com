@@ -13,7 +13,7 @@
         {{ paragraph.text }}
       </p>
     </template>
-    <img :src="getProjectData.image" />
+    <img :src="getImageUrl(getProjectData.image)" />
   </article>
 </template>
 
@@ -35,6 +35,11 @@ export default {
       return project;
     },
   },
+  methods: {
+    getImageUrl(name) {
+      return new URL(`/src/assets/images/portfolio/${name}`, import.meta.url).href;
+    }
+  }
 };
 </script>
 

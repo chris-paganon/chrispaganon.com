@@ -7,6 +7,11 @@ export default {
       portfolio,
     };
   },
+  methods: {
+    getImageUrl(name) {
+      return new URL(`/src/assets/images/portfolio/${name}`, import.meta.url).href;
+    }
+  }
 };
 </script>
 
@@ -23,7 +28,7 @@ export default {
       :to="`project/${project.slug}`"
       :key="project.id"
     >
-      <img :src="`${project.image}`" />
+      <img :src="getImageUrl(project.image)" />
       <div class="portfolio-card-text-wrapper">
         <h3>{{ project.name }}</h3>
         <p>{{ project.shortDescription }}</p>
