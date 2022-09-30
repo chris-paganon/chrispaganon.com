@@ -65,7 +65,7 @@ export default {
         </li>
         <li class="contact-info">
           By phone here:
-          <a href="tel:+15144316333">+1 (514) 431-6333</a>
+          <a href="tel:+15144316333">+1&nbsp;(514)&nbsp;431&nbsp;6333</a>
         </li>
       </ul>
     </div>
@@ -92,6 +92,11 @@ input, textarea {
   border-radius: 5px;
   padding: 15px;
 }
+.button {
+  font-size: 20px;
+  border-radius: 30px;
+}
+
 .contact-info {
   font-size: 22px;
   margin: 15px 0;
@@ -110,6 +115,11 @@ input, textarea {
   .contact-info {
     font-size: 20px;
     text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  .button {
+    font-size: 18px;
   }
 }
 </style>

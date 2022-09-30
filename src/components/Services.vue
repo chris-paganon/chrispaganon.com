@@ -64,7 +64,6 @@
   padding: 20px 20px 5px 20px;
   font-size: 27px;
   font-weight: 600;
-  width: 33%;
   margin: auto;
 }
 ul {
@@ -93,5 +92,11 @@ li {
   margin: 60px auto 20px auto;
   font-size: 20px;
   border-radius: 30px;
+}
+@media (max-width: 450px) {
+  .button {
+    font-size: 18px;
+    padding: 15px 25px;
+  }
 }
 </style>

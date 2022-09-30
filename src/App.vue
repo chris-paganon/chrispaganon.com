@@ -42,7 +42,6 @@ textarea {
     font-size: 48px;
   }
 }
-
 @media (max-width: 600px) {
   h1 {
     font-size: 40px;
@@ -55,6 +54,17 @@ textarea {
   }
   p {
     font-size: 19px;
+  }
+}
+@media (max-width: 450px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 23px;
   }
 }
 
@@ -97,6 +107,16 @@ p a:hover {
 @media (max-width: 925px) {
   .hero-banner {
     padding: 0 10%;
+  }
+}
+@media (max-width: 450px) {
+  .hero-banner {
+    padding: 0 5%;
+    text-align: center;
+  }
+  .button {
+    font-size: 14px;
+    padding: 13px 18px;
   }
 }
 </style>
