@@ -85,6 +85,7 @@ p a:hover {
   text-decoration: none;
   padding: 15px 25px;
   border-radius: 25px;
+  border: 0px;
   font-size: 16px;
   font-weight: 600;
   margin: auto;
