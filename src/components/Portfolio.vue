@@ -80,11 +80,14 @@ img {
   transform: rotate(-135deg);
 }
 
-.portfolio-intro-wrapper.view-more-off {
+.portfolio-intro-wrapper {
   position: relative;
-  max-height: 4em;
+  max-height: 1000px;
   overflow: hidden;
   transition: max-height 2s ease-out;
+}
+.portfolio-intro-wrapper.view-more-off {
+  max-height: 4em;
 }
 .view-more-overlay {
   position: absolute;
