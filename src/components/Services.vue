@@ -47,6 +47,7 @@
 <style scoped>
 .services-wrapper {
   display: flex;
+  flex-wrap: wrap;
   margin: 60px auto 40px auto;
   border: 1px solid gray;
   border-radius: 15px;
@@ -76,6 +77,16 @@ li {
 .icon {
   font-size: 40px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 850px) {
+  .service-wrapper {
+    width: 100%;
+  }
+  .service-wrapper:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid gray;
+  }
 }
 
 .button {
