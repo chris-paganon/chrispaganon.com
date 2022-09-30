@@ -47,6 +47,7 @@ export default {
 article {
   max-width: 1024px;
   margin: 40px auto;
+  padding: 0px 20px;
 }
 a,
 li {
@@ -62,22 +63,28 @@ p {
 
 ul {
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin-bottom: 40px;
+  text-align: center;
 }
 li {
   padding: 0 15px;
-}
-li:not(:last-child) {
-  border-right: 1px solid gray;
-}
-li:first-child {
-  padding-left: 0;
+  margin-bottom: 15px;
 }
 
 img {
   max-width: 800px;
   display: block;
   margin: 60px auto;
-  max-width: 600px;
+  width: 600px;
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  a,
+  li {
+    font-size: 22px;
+  }
 }
 </style>
