@@ -37,6 +37,27 @@ textarea {
   font-size: 18px;
 }
 
+@media (max-width: 925px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 19px;
+  }
+}
+
 p a {
   display: inline-block;
   color: black;
@@ -72,5 +93,10 @@ p a:hover {
   min-height: 500px;
   background-color: #c9e5f9;
   padding: 0 20%;
+}
+@media (max-width: 925px) {
+  .hero-banner {
+    padding: 0 10%;
+  }
 }
 </style>

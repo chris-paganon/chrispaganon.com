@@ -96,4 +96,20 @@ input, textarea {
   font-size: 22px;
   margin: 15px 0;
 }
+
+@media (max-width: 850px) {
+  h2, h3 {
+    text-align: center;
+  }
+  .contact-me-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .contact-me-form-wrapper {
+    margin-bottom: 60px;
+  }
+  .contact-info {
+    font-size: 20px;
+    text-align: center;
+  }
+}
 </style>

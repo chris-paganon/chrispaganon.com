@@ -89,6 +89,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.45);
   border-radius: 10px;
@@ -98,6 +99,12 @@ img {
 .portfolio-card:hover .portfolio-card-text-wrapper {
   visibility: visible;
   transform: translateY(0);
+}
+
+@media (max-width: 850px) {
+  .portfolio-card {
+    width: 100%;
+  }
 }
 
 </style>

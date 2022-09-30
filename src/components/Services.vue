@@ -81,7 +81,7 @@ li {
   margin-bottom: 20px;
 }
 
-a {
+.button {
   margin: 60px auto 20px auto;
   font-size: 20px;
   border-radius: 30px;

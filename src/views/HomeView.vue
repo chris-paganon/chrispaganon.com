@@ -53,10 +53,7 @@ export default {
 
 .introduction {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 150px 0;
+  padding: 150px 40px;
 }
 .introduction p {
   font-size: 2em;
@@ -65,7 +62,7 @@ export default {
 img {
   position: absolute;
   top: -75px;
-  right: 0;
+  right: 20px;
   width: 200px;
   border-radius: 50%;
   margin: 0 10px;
@@ -73,6 +70,24 @@ img {
 }
 img:hover {
   transform: translateY(-10px) scale(1.1, 1.1);
+}
+@media (max-width: 925px) {
+  .introduction p {
+    font-size: 1.8em;
+    margin-right: 0;
+    text-align: center;
+  }
+  img {
+    top: -90px
+  }
+}
+@media (max-width: 600px) {
+  img {
+    width: 170px;
+    margin: 0;
+    top: -75px;
+    right: calc(50% - 170px / 2);
+  }
 }
 
 .separator {
