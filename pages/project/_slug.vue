@@ -28,7 +28,7 @@ export default {
   },
   computed: {
     getProjectData() {
-      const projectSlug = this.$route.params.projectSlug;
+      const projectSlug = this.$route.params.slug;
       const project = this.portfolio.find((project) => {
         return project.slug === projectSlug;
       });

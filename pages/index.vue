@@ -23,10 +23,6 @@
 <script>
 export default {
   name: 'IndexPage',
-  head: {
-    title: 'Chris Paganon',
-    link: [{rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Ubuntu"}]
-  }
 }
 </script>
 
