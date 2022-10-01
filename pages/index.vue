@@ -8,7 +8,7 @@
         <p>
           After 2 years building our e-commerce platform at <a href="https://panierquebecois.ca" target="_blank">Panier Québécois</a>, I now help SMBs and non-for profits build or improve their Website.
         </p>
-        <img src="/src/assets/images/me.jpg" alt="me" />
+        <img src="/images/me.jpg" alt="me" />
       </section>
       <hr class="separator" />
       <ServicesTable />
@@ -23,113 +23,87 @@
 <script>
 export default {
   name: 'IndexPage',
+  head: {
+    title: 'Chris Paganon',
+    link: [{rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Ubuntu"}]
+  }
 }
 </script>
 
 <style scoped>
-h1 {
-  font-size: 55px;
-  font-weight: 600;
-  line-height: 1.25;
+.content-section {
+  margin: auto;
+  max-width: 1024px;
+  padding: 60px 40px;
 }
-h2 {
-  font-size: 45px;
-  margin-bottom: 50px;
+.background-section-wrapper {
+  width: 100%;
+  background-color: rgb(255, 251, 246);
 }
-h3 {
-  font-size: 30px;
-  margin-bottom: 30px;
+
+.introduction {
+  position: relative;
+  padding: 150px 40px;
 }
-p {
-  font-size: 20px;
-  margin-bottom: 20px;
+.introduction p {
+  font-size: 2em;
+  margin-right: 170px;
+  margin-bottom: 0;
 }
-input, 
-textarea {
-  font-size: 18px;
+img {
+  position: absolute;
+  top: -75px;
+  right: 20px;
+  width: 200px;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: transform 500ms ease-out;
+}
+img:hover {
+  transform: translateY(-10px) scale(1.1, 1.1);
+}
+
+.separator {
+  border-top: 2px solid gray;
+  max-width: 66%;
+}
+.services-section {
+  text-align: center;
 }
 
 @media (max-width: 925px) {
-  h1 {
-    font-size: 48px;
+  .introduction {
+    padding: 140px 40px 100px 40px;
+  }
+  .introduction p {
+    font-size: 1.8em;
+    margin-right: 0;
+    text-align: center;
+  }
+  img {
+    top: -90px
   }
 }
 @media (max-width: 600px) {
-  h1 {
-    font-size: 40px;
-  }
-  h2 {
-    font-size: 38px;
-  }
-  h3 {
-    font-size: 25px;
-  }
-  p {
-    font-size: 19px;
+  img {
+    width: 170px;
+    margin: 0;
+    top: -75px;
+    right: calc(50% - 170px / 2);
   }
 }
 @media (max-width: 450px) {
-  h1 {
-    font-size: 35px;
+  .content-section {
+    padding: 50px 20px;
   }
-  h2 {
-    font-size: 32px;
+  .introduction p {
+    font-size: 1.5em;
+    margin: 30px 0 10px 0;
   }
-  h3 {
-    font-size: 23px;
-  }
-}
-
-p a {
-  display: inline-block;
-  color: black;
-  transition: transform 150ms ease-out;
-}
-p a:hover {
-  transform: skew(-1.5deg, -1.5deg);
-}
-
-.button {
-  display: block;
-  cursor: pointer;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  padding: 15px 25px;
-  border-radius: 25px;
-  border: 0px;
-  font-size: 16px;
-  font-weight: 600;
-  margin: auto;
-  width: fit-content;
-  transition: background-color 250ms ease-out, transform 250ms ease-out;
-}
-.button:hover {
-  background-color: rgb(44, 44, 44);
-  transform: scale(1.03, 1.03);
-}
-
-.hero-banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 500px;
-  background-color: #c9e5f9;
-  padding: 0 20%;
-}
-@media (max-width: 925px) {
-  .hero-banner {
-    padding: 0 10%;
-  }
-}
-@media (max-width: 450px) {
-  .hero-banner {
-    padding: 0 5%;
-    text-align: center;
-  }
-  .button {
-    font-size: 14px;
-    padding: 13px 18px;
+  img {
+    width: 150px;
+    top: -120px;
+    right: calc(50% - 150px / 2);
   }
 }
 </style>

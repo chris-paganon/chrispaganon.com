@@ -40,7 +40,7 @@ export default {
 </script>
 
 <template>
-  <section class="contact-me-wrapper content-section" id="contact-me">
+  <section class="contact-me-section-wrapper content-section" id="contact-me">
     <h2 class="contact-me-heading">Contact Me</h2>
     <div class="contact-me-wrapper">
       <div class="contact-me-form-wrapper contact-me-col">
