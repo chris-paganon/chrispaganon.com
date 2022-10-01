@@ -70,7 +70,7 @@ img {
   height: 15px;
   border-right: 4px solid black;
   border-bottom: 4px solid black;
-  margin: auto;
+  margin: 20px auto 0 auto;
   cursor: pointer;
 }
 .arrow-down {
@@ -82,9 +82,9 @@ img {
 
 .portfolio-intro-wrapper {
   position: relative;
-  max-height: 1000px;
+  max-height: 500px;
   overflow: hidden;
-  transition: max-height 2s ease-out;
+  transition: max-height 500ms ease-out;
 }
 .portfolio-intro-wrapper.view-more-off {
   max-height: 4em;
@@ -102,7 +102,7 @@ img {
 }
 
 .portfolio-sub-heading {
-  margin: 80px 0 30px 0;
+  margin: 60px 0 30px 0;
   text-align: center;
 }
 
