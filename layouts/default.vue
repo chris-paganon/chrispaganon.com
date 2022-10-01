@@ -5,15 +5,6 @@
   </div>
 </template>
 
-<script>
-export default {
-    head: {
-    title: 'Chris Paganon',
-    link: [{rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Ubuntu"}]
-  }
-}
-</script>
-
 <style>
   html,
 body,

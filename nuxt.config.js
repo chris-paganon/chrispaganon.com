@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'chrispaganon.com_nuxt',
+    title: 'Chris Paganon',
     htmlAttrs: {
       lang: 'en',
     },
@@ -14,7 +14,10 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }, 
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Ubuntu" }
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
