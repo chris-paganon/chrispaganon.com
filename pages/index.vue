@@ -1,20 +1,32 @@
-<script>
-import AppHeader from "./components/AppHeader.vue";
-import "./assets/main.css";
-
-export default {
-  components: {
-    AppHeader,
-  },
-};
-</script>
-
 <template>
-  <AppHeader />
-  <RouterView />
+  <main>
+    <section class="hero-banner">
+      <h1>Freelance Web Developer & Business Owner from Montréal</h1>
+    </section>
+    <div class="home-content-wrapper">
+      <section class="introduction content-section">
+        <p>
+          After 2 years building our e-commerce platform at <a href="https://panierquebecois.ca" target="_blank">Panier Québécois</a>, I now help SMBs and non-for profits build or improve their Website.
+        </p>
+        <img src="/src/assets/images/me.jpg" alt="me" />
+      </section>
+      <hr class="separator" />
+      <ServicesTable />
+      <div class="background-section-wrapper portfolio-section-background">
+        <PortfolioProjects />
+      </div>
+      <ContactMe />
+    </div>
+  </main>
 </template>
 
-<style>
+<script>
+export default {
+  name: 'IndexPage',
+}
+</script>
+
+<style scoped>
 h1 {
   font-size: 55px;
   font-weight: 600;

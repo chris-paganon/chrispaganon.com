@@ -1,24 +1,24 @@
 <template>
-  <section class="hero-banner" :style="{backgroundColor: `${getProjectData.color}`}">
-    <h1>{{ getProjectData.name }}</h1>
-  </section>
-  <article>
-    <ul>
-      <li>From: {{ getProjectData.startDate }}</li>
-      <li>Until: {{ getProjectData.endDate }}</li>
-      <li><a :href="getProjectData.url" target="_blank">Visit the website</a></li>
-    </ul>
-    <template v-for="paragraph in getProjectData.content" :key="paragraph.id">
-      <p v-if="paragraph.type === 'p'">
+  <main>
+    <section class="hero-banner" :style="{backgroundColor: `${getProjectData.color}`}">
+      <h1>{{ getProjectData.name }}</h1>
+    </section>
+    <article>
+      <ul>
+        <li>From: {{ getProjectData.startDate }}</li>
+        <li>Until: {{ getProjectData.endDate }}</li>
+        <li><a :href="getProjectData.url" target="_blank">Visit the website</a></li>
+      </ul>
+      <p v-for="paragraph in getProjectData.content" :key="paragraph.id"> 
         {{ paragraph.text }}
       </p>
-    </template>
-    <img :src="getImageUrl(getProjectData.image)" />
-  </article>
+      <img :src="getProjectData.image" />
+    </article>
+  </main>
 </template>
 
 <script>
-import { portfolio } from "../portfolio.js";
+import { portfolio } from "~/static/portfolio.js";
 
 export default {
   data() {
@@ -35,11 +35,6 @@ export default {
       return project;
     },
   },
-  methods: {
-    getImageUrl(name) {
-      return new URL(`/src/assets/images/portfolio/${name}`, import.meta.url).href;
-    }
-  }
 };
 </script>
 

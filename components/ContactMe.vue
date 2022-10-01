@@ -40,36 +40,38 @@ export default {
 </script>
 
 <template>
-  <h2 class="contact-me-heading">Contact Me</h2>
-  <div class="contact-me-wrapper">
-    <div class="contact-me-form-wrapper contact-me-col">
-      <h3>Fill up the form</h3>
-      <form name="contact-me-form" method="post" @submit.prevent="handleSubmit" netlify>
-        <input type="hidden" name="form-name" value="contact-me-form" />
-        <label for="fullName">Name:</label>
-        <input type="text" name="fullName" id="fullName" v-model="form.fullName" />
-        <label for="name">E-mail:</label>
-        <input type="email" name="email" id="email" v-model="form.email" />
-        <label for="name">Tell me about your project:</label>
-        <textarea name="description" id="description" v-model="form.description" rows="4" placeholder='Something like "I would like to add pictures from my Instagram to my existing website..."'></textarea>
-        <p>{{formResponse}}</p>
-        <button class="button">Send</button>
-      </form> 
+  <section class="contact-me-wrapper content-section" id="contact-me">
+    <h2 class="contact-me-heading">Contact Me</h2>
+    <div class="contact-me-wrapper">
+      <div class="contact-me-form-wrapper contact-me-col">
+        <h3>Fill up the form</h3>
+        <form name="contact-me-form" method="post" @submit.prevent="handleSubmit" netlify>
+          <input type="hidden" name="form-name" value="contact-me-form" />
+          <label for="fullName">Name:</label>
+          <input type="text" name="fullName" id="fullName" v-model="form.fullName" />
+          <label for="name">E-mail:</label>
+          <input type="email" name="email" id="email" v-model="form.email" />
+          <label for="name">Tell me about your project:</label>
+          <textarea name="description" id="description" v-model="form.description" rows="4" placeholder='Something like "I would like to add pictures from my Instagram to my existing website..."'></textarea>
+          <p>{{formResponse}}</p>
+          <button class="button">Send</button>
+        </form> 
+      </div>
+      <div class="contact-me-details contact-me-col">
+        <h3>Or contact me here</h3>
+        <ul>
+          <li class="contact-info">
+            By e-mail here:
+            <a href="mailto:cpaganon@gmail.com">cpaganon@gmail.com</a>
+          </li>
+          <li class="contact-info">
+            By phone here:
+            <a href="tel:+15144316333">+1&nbsp;(514)&nbsp;431&nbsp;6333</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="contact-me-details contact-me-col">
-      <h3>Or contact me here</h3>
-      <ul>
-        <li class="contact-info">
-          By e-mail here:
-          <a href="mailto:cpaganon@gmail.com">cpaganon@gmail.com</a>
-        </li>
-        <li class="contact-info">
-          By phone here:
-          <a href="tel:+15144316333">+1&nbsp;(514)&nbsp;431&nbsp;6333</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>

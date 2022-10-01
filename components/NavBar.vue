@@ -3,12 +3,12 @@
 <template>
   <nav>
     <ul>
-      <li><router-link to="/">Home</router-link></li>
-      <li><router-link to="/#portfolio">Portfolio</router-link></li>
+      <li><NuxtLink to="/">Home</NuxtLink></li>
+      <li><NuxtLink to="/#portfolio">Portfolio</NuxtLink></li>
       <li>
-        <router-link to="/#contact-me" class="contact-me-btn button">
+        <NuxtLink to="/#contact-me" class="contact-me-btn button">
           Let's Talk
-        </router-link>
+        </NuxtLink>
       </li>
     </ul>
   </nav>

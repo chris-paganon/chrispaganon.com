@@ -7,7 +7,7 @@ export const portfolio = [
     shortDescription: "The 1st online farmer's market in Montréal",
     startDate: "2020-04-01",
     endDate: "now",
-    image: "panier-quebecois-thumbnail.jpg",
+    image: "/images/panier-quebecois-thumbnail.jpg",
     color: "#5fbb65d1",
     content: [
       {
@@ -35,7 +35,7 @@ export const portfolio = [
     shortDescription: "Local small scale recycling non-for-profit",
     startDate: "2019-06-01",
     endDate: "2020-08-01",
-    image: "ppmtl-thumbnail.jpg",
+    image: "/images/ppmtl-thumbnail.jpg",
     color: "#31e0b794",
     content: [
       {
@@ -58,7 +58,7 @@ export const portfolio = [
     shortDescription: "A B2B massage therapy and ostheopathy service",
     startDate: "2019-04-01",
     endDate: "now",
-    image: "pure-sante-thumbnail.jpg",
+    image: "/images/pure-sante-thumbnail.jpg",
     color: "#ead59fe6",
     content: [
       {
