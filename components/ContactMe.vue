@@ -49,19 +49,19 @@ export default {
 </script>
 
 <template>
-  <section class="contact-me-section-wrapper content-section" id="contact-me">
+  <section id="contact-me" class="contact-me-section-wrapper content-section">
     <h2 class="contact-me-heading">Contact Me</h2>
     <div class="contact-me-wrapper">
       <div class="contact-me-form-wrapper contact-me-col">
         <h3>Fill up the form</h3>
-        <form name="contact-me-form" method="post" @submit.prevent="handleSubmit" netlify>
+        <form name="contact-me-form" method="post" netlify @submit.prevent="handleSubmit">
           <input type="hidden" name="form-name" value="contact-me-form" />
           <label for="fullName">Name:</label>
-          <input type="text" name="fullName" id="fullName" v-model="form.fullName" />
+          <input id="fullName" v-model="form.fullName" type="text" name="fullName" />
           <label for="name">E-mail:</label>
-          <input type="email" name="email" id="email" v-model="form.email" />
+          <input id="email" v-model="form.email" type="email" name="email" />
           <label for="name">Tell me about your project:</label>
-          <textarea name="description" id="description" v-model="form.description" rows="4" placeholder='Something like "I would like to add pictures from my Instagram to my existing website..."'></textarea>
+          <textarea id="description" v-model="form.description" name="description" rows="4" placeholder='Something like "I would like to add pictures from my Instagram to my existing website..."'></textarea>
           <p>{{formResponse}}</p>
           <button class="button">Send</button>
         </form> 
