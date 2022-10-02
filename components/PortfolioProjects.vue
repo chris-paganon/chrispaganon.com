@@ -139,7 +139,7 @@ img {
   overflow: hidden;
   transition: transform 1s;
 }
-@media (hover: hover) {
+@media (pointer: fine) {
   .portfolio-card:hover {
     transform: scale(1.02, 1.02);
   }
@@ -148,7 +148,7 @@ img {
     transform: translateY(0);
   }
 }
-@media (hover: none) {
+@media (pointer: coarse) {
   .portfolio-card.viewportVisible {
     transform: scale(1.02, 1.02);
   }
