@@ -9,9 +9,7 @@
         <li>Until: {{ getProjectData.endDate }}</li>
         <li><a :href="getProjectData.url" target="_blank">Visit the website</a></li>
       </ul>
-      <p v-for="paragraph in getProjectData.content" :key="paragraph.id"> 
-        {{ paragraph.text }}
-      </p>
+      <nuxt-content :document="page"></nuxt-content>
       <img :src="getProjectData.image" />
     </article>
   </main>
@@ -21,6 +19,13 @@
 import { portfolio } from "~/static/portfolio.js";
 
 export default {
+  async asyncData (context) {
+    const { $content } = context;
+    const page = await $content(context.route.path).fetch();
+    return {
+      page
+    }
+  },
   data() {
     return {
       portfolio,
