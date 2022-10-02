@@ -23,23 +23,23 @@ export default {
 </script>
 
 <template>
-  <section class="portfolio-section-wrapper content-section" id="portfolio">
+  <section id="portfolio" class="portfolio-section-wrapper content-section">
     <h2 class="portfolio-heading">My Portfolio</h2>
     <div :class="`portfolio-intro-wrapper ${viewMoreClass}`">
-      <div class="view-more-overlay" v-if="! viewMoreOn"></div>
+      <div v-if="! viewMoreOn" class="view-more-overlay"></div>
       <p class="portfolio-intro"><strong>I built my first website in 2016</strong> for a 3D printing University project. Since then I built and managed <strong>several websites</strong> for local and international projects: a crepes catering project, a B2B massage therapy and ostheopathie service, a local bowling in Colombia and a small-scale plastic recycling community in Montréal.</p>
       <p class="portfolio-intro">In 2020, <strong>I co-founded the first online farmer's market in Montréal</strong>: <a href="https://panierquebecois.ca" target="_blank">Panier Québécois</a>. I have been developping, improving and maintaining our website ever since (along managing our business' startegy, marketing and operations with my lovely co-founders).</p>
       <p class="portfolio-intro">As our business doesn't require a full-time developper anymore, I am now putting my experience in web development, entrepreneurship and marketing to good use: <strong>helping you build your online presence!</strong></p>
     </div>
-    <div class="arrow arrow-down" @click="viewMoreOn = true" v-if="! viewMoreOn"></div>
-    <div class="arrow arrow-up" @click="viewMoreOn = false" v-if="viewMoreOn"></div>
+    <div v-if="! viewMoreOn" class="arrow arrow-down" @click="viewMoreOn = true"></div>
+    <div v-if="viewMoreOn" class="arrow arrow-up" @click="viewMoreOn = false"></div>
     <h3 class="portfolio-sub-heading">Find out more about a few of my projects below:</h3>
     <div class="portfolio-wrapper">
       <NuxtLink
-        class="portfolio-card"
         v-for="project in portfolio"
-        :to="`project/${project.slug}`"
         :key="project.id"
+        class="portfolio-card"
+        :to="`project/${project.slug}`"
       >
         <img :src="project.image" />
         <div class="portfolio-card-text-wrapper">
