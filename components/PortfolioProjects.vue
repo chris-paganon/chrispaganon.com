@@ -84,6 +84,11 @@ img {
   overflow: hidden;
   transition: max-height 500ms ease-out;
 }
+@media (max-width: 575px) {
+  .portfolio-intro-wrapper {
+    max-height: 800px;
+  }
+}
 .portfolio-intro-wrapper.view-more-off {
   max-height: 4em;
 }
