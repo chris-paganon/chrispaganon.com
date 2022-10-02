@@ -17,6 +17,15 @@ export default {
         .join("&");
     },
     handleSubmit() {
+      try {
+        if ( ! this.form.fullName) throw new Error('Please enter your name');
+        if ( ! this.form.email) throw new Error('Please enter your e-mail');
+        if ( ! this.form.description) throw new Error('Please enter a descrption');
+      } catch(err) {
+        this.formResponse = err.message;
+        return;
+      }
+
       const axiosConfig = {
         header: { "Content-Type": "application/x-www-form-urlencoded" }
       };
