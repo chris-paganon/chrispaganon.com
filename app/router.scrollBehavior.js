@@ -1,21 +1,22 @@
 export default function (to, from, savedPosition) {
-  if (savedPosition) {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve({
+  let position = {};
+
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      if (savedPosition) {
+        position = {
           selector: savedPosition,
           behavior: "smooth",
-        });
-      }, 100);
-    });
-  } else if (to.hash) {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve({
+        };
+      } else if (to.hash) {
+        position = {
           selector: to.hash,
           behavior: "smooth",
-        });
-      }, 100);
-    });
-  }
+        };
+      } else {
+        position = { x: 0, y: 0 };
+      }
+      resolve(position);
+    }, 50);
+  });
 }
