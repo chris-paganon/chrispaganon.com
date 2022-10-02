@@ -18,6 +18,24 @@ export default {
       }
       return this.viewMoreClass;
     }
+  },
+  mounted() {
+    // Display hover overlay on scroll on mobile if card is centered
+    const portfolioCards = this.$refs.portfolioCard;
+
+    window.addEventListener('scroll', function() {
+      portfolioCards.forEach(function (portfolioCard) {
+        const position = portfolioCard.$el.getBoundingClientRect();
+        const centerBoxHeight = Math.min(2 * position.height, window.innerHeight) - 5;
+        const distToCenterBox = ( window.innerHeight - centerBoxHeight ) / 2;
+
+        if ( position.top > distToCenterBox && position.bottom < (window.innerHeight - distToCenterBox) ) {
+          portfolioCard.$el.classList.add('viewportVisible');
+        } else {
+          portfolioCard.$el.classList.remove('viewportVisible');
+        }
+      });
+    });
   }
 };
 </script>
@@ -40,6 +58,7 @@ export default {
         :key="project.id"
         class="portfolio-card"
         :to="`project/${project.slug}`"
+        ref="portfolioCard"
       >
         <img :src="project.image" />
         <div class="portfolio-card-text-wrapper">
@@ -120,8 +139,23 @@ img {
   overflow: hidden;
   transition: transform 1s;
 }
-.portfolio-card:hover {
-  transform: scale(1.02, 1.02);
+@media (hover: hover) {
+  .portfolio-card:hover {
+    transform: scale(1.02, 1.02);
+  }
+  .portfolio-card:hover .portfolio-card-text-wrapper {
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+@media (hover: none) {
+  .portfolio-card.viewportVisible {
+    transform: scale(1.02, 1.02);
+  }
+  .portfolio-card.viewportVisible .portfolio-card-text-wrapper {
+    visibility: visible;
+    transform: translateY(0);
+  }
 }
 .portfolio-card:first-child {
   width: 100%;
@@ -144,10 +178,6 @@ img {
   border-radius: 10px;
   transform: translateY(100%);
   transition: transform 750ms ease-out, visibility 750ms ease-out;
-}
-.portfolio-card:hover .portfolio-card-text-wrapper {
-  visibility: visible;
-  transform: translateY(0);
 }
 
 @media (max-width: 850px) {
