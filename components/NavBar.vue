@@ -10,6 +10,8 @@
           Let's Talk
         </NuxtLink>
       </li>
+      <li v-if="$i18n.locale !== 'en'"><NuxtLink :to="switchLocalePath('en')">EN</NuxtLink></li>
+      <li v-if="$i18n.locale !== 'fr'"><NuxtLink :to="switchLocalePath('fr')">FR</NuxtLink></li>
     </ul>
   </nav>
 </template>
