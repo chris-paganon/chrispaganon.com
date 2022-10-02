@@ -13,7 +13,7 @@
       <hr class="separator" />
       <ServicesTable />
       <div class="background-section-wrapper portfolio-section-background">
-        <PortfolioProjects />
+        <PortfolioProjects :portfolio-intro="portfolioIntro" />
       </div>
       <ContactMe />
     </div>
@@ -23,6 +23,13 @@
 <script>
 export default {
   name: 'IndexPage',
+  async asyncData (context) {
+    const { $content, app } = context;
+    const portfolioIntro = await $content(`${app.i18n.locale}/portfolio-intro`).fetch();
+    return {
+      portfolioIntro
+    }
+  },
 }
 </script>
 
