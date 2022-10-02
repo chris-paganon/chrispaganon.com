@@ -40,7 +40,26 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxt/content',
+    'nuxt-i18n',
   ],
+
+  // Nuxt i18n module configuration
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-CA',
+        name: 'English',
+      },
+      {
+        code: 'fr',
+        iso: 'fr-CA',
+        name: 'Français',
+      },
+    ],
+    defaultLocale: 'en',
+    noPrefixDefaultLocale: true,
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
