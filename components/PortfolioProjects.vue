@@ -56,9 +56,9 @@ export default {
       <NuxtLink
         v-for="project in portfolio"
         :key="project.id"
+        ref="portfolioCard"
         class="portfolio-card"
         :to="`project/${project.slug}`"
-        ref="portfolioCard"
       >
         <img :src="project.image" />
         <div class="portfolio-card-text-wrapper">
