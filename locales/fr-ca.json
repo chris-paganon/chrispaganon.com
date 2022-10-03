@@ -1,15 +1,15 @@
 {
   "homepage": {
     "heading1" : "Développeur Web Freelance & Entrepreuner Montréalais",
-    "intro": "Après 2 ans de développement sur notre platforme de commerce en ligne chez Panier Québécois, j'aide maintenant les PME et les OBNL à contruire et améliorer leur site Web"
+    "intro": "Après 2 ans de développement sur notre platforme de commerce en ligne chez Panier Québécois, j'aide maintenant les PME et les OBNL à construire et améliorer leur site Web"
   },
   "NavBar": {
     "home": "Accueil",
     "portfolio": "Portfolio",
-    "contact-me": "Contactez moi"
+    "contact-me": "Contactez-moi"
   },
   "ServicesTable": {
-    "heading": "Comment puis-je vous aider?",
+    "heading": "Quels services pour vous aider?",
     "sub-heading": "Je développe votre Site Web Wordpress mais je peux également vous aider dans votre stratégie de marketing!",
     "note": "J'ai l'esprit pratique et je m'assure de vous facilter la vie à chaque étape du développement. Je construit des outils utiles qui apportent des résultats mesurables."
   },
@@ -18,7 +18,7 @@
     "sub-heading": "Apprenez en plus sur plusieurs de mes projets ci-dessous:"
   },
   "ContactMe": {
-    "heading": "Contactez Moi",
+    "heading": "Contactez-moi",
     "form-sub-heading": "Remplissez le formulaire",
     "contact-sub-heading": "Ou contactez-moi ici",
     "email-address": "Par courriel:",
