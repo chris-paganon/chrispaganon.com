@@ -10,7 +10,11 @@
   },
   "ServicesTable": {
     "heading": "What can I do for you?",
-    "sub-heading": "I specialize in Wordpress Web Development but I can also help you with your marketing startegy!",
+    "sub-heading": {
+      "part1": "I specialize in",
+      "bold": "Wordpress Web Development",
+      "part2": "but I can also help you with your marketing startegy!"
+    },
     "note": "No fuss & worry-free, I make your life as easy as possible at every step. I build useful tools to get mesurable results."
   },
   "PortfolioProjects": {

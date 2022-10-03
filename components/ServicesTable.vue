@@ -1,7 +1,7 @@
 <template>
   <section class="services-section content-section">
   <h2>{{ $t('ServicesTable.heading') }}</h2>
-    <p>{{ $t('ServicesTable.sub-heading') }}</p>
+    <p>{{ $t('ServicesTable.sub-heading.part1') }} <strong>{{ $t('ServicesTable.sub-heading.bold') }}</strong> {{ $t('ServicesTable.sub-heading.part2') }}</p>
     <div class="services-wrapper">
       <div class="service-wrapper" v-for="service in services" :key="service.id">
         <div class="service-title">
