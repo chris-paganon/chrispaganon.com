@@ -40,7 +40,7 @@
       </div>
     </div>
     <p><em>No fuss & no extra fees. I am practical and down to earth. I build useful tools to get mesurable results.</em></p>
-    <NuxtLink to="/#contact-me" class="contact-me-btn button">
+    <NuxtLink :to="localePath({ path: '/#contact-me' })" class="contact-me-btn button">
       Let's Talk
     </NuxtLink>
   </section>

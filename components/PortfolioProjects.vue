@@ -59,7 +59,7 @@ export default {
         :key="project.id"
         ref="portfolioCard"
         class="portfolio-card"
-        :to="`project/${project.slug}`"
+        :to="localePath({ name: 'project-slug', params: {slug: project.slug} })"
       >
         <img :src="project.image" />
         <div class="portfolio-card-text-wrapper">

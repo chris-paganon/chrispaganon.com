@@ -19,6 +19,7 @@
 import { portfolio } from "~/static/portfolio.js";
 
 export default {
+  name: 'ProjectPage',
   async asyncData (context) {
     const { $content, app } = context;
     const defaultLocale = app.i18n.defaultLocale;

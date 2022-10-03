@@ -3,10 +3,10 @@
 <template>
   <nav>
     <ul>
-      <li><NuxtLink to="/">Home</NuxtLink></li>
-      <li><NuxtLink to="/#portfolio">Portfolio</NuxtLink></li>
+      <li><NuxtLink :to="localePath({ name: 'index' })">Home</NuxtLink></li>
+      <li><NuxtLink :to="localePath({ path: '/#portfolio' })">Portfolio</NuxtLink></li>
       <li>
-        <NuxtLink to="/#contact-me" class="contact-me-btn button">
+        <NuxtLink :to="localePath({ path: '/#contact-me' })" class="contact-me-btn button">
           Let's Talk
         </NuxtLink>
       </li>
