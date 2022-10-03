@@ -4,13 +4,12 @@
       <h1>{{ projectContent.Title }}</h1>
     </section>
     <article>
-      <ul>
+      <ul class="project-info">
         <li>{{ $t('ProjectPage.date-from') }} {{ projectContent.startDate }}</li>
         <li>{{ $t('ProjectPage.date-to') }} {{ projectContent.endDate }}</li>
         <li><a :href="projectContent.url" target="_blank">{{ $t('ProjectPage.visit') }}</a></li>
       </ul>
       <nuxt-content :document="projectContent"></nuxt-content>
-      <img :src="projectContent.image" />
     </article>
   </main>
 </template>
@@ -43,8 +42,8 @@ article {
   margin: 40px auto;
   padding: 0px 20px;
 }
-a,
-li {
+.project-info a,
+.project-info li {
   font-size: 25px;
 }
 p {
@@ -55,24 +54,28 @@ p {
   min-height: 300px;
 }
 
-ul {
+ul.project-info {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 40px;
   text-align: center;
 }
-li {
+.project-info li {
   padding: 0 15px;
   margin-bottom: 15px;
 }
 
-img {
+:deep(img) {
   max-width: 800px;
   display: block;
   margin: 60px auto;
   width: 600px;
   max-width: 100%;
+}
+:deep(.nuxt-content ul) {
+  list-style: disc;
+  padding-left: 40px;
 }
 
 @media (max-width: 600px) {

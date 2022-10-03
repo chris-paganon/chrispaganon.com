@@ -4,14 +4,29 @@ Description: Le 1er marché fermier en ligne à Montréal
 id: 1
 slug: panier-quebecois
 url: https://panierquebecois.ca
-startDate: "2020-04-01"
+startDate: "Avril 2020"
 endDate: maintenant
 image: /images/portfolio/panier-quebecois-thumbnail.jpg
 color: 5fbb65d1
 ---
 
-Panier Québécois is the first online farmer's market in Montréal. It's also been my full time occupation since April 2020. We started the project with my 3 co-founders to help local farmers markets when COVID started. It quickly grew into a business with over 800 orders every month.
+Panier Québécois est **le 1er marché fermier en ligne à Montréal**. C'etait aussi mon occupation à plein temps depuis Avril 2020. Nous avons démarré le projet avec mes 3 co-fondateurs afin **d'aider les marchés fermiers locaux** lorsque que COVID a commencé. Notre entreprise a rapidement grossit jusqu'à recevoir **plus de 800 commandes par mois**.
 
-As a business owner, I have been involved in most aspects of the project, not just web development. I managed our marketing strategy, built and integrated software tools for analytics and marketing, managed customer service, prepared and delivered orders, built tools to optimize operations and purchasing...
+En tant qu'entrepreneur, j'étais **impliqué dans la pluspart des aspects de l'entreprise**, pas uniquement le dévelopement web. J'ai managé notre stratégie de marketing, construit et intégré plusieurs outils logiciels, managé le service client, préparé et livré des commandes, construit des outils pour optimiser nos opérations...
 
-The first hand experience I gained through running a business gives me a better understanding of your needs as an entrepeuner. I understand what truly matters to you and I can help you achieve your goals more efficiently.
+L'expérience que j'ai acquis en tant que co-fondateur me donne **une meilleure compréhension de vos besoins** en tant qu'entrepeuner. Je comprends ce qui est important pour vous et je peux vous aider à accomplir vos objectifs efficacement.
+
+![thumbnail Panier Québécois](/images/portfolio/panier-quebecois-thumbnail.jpg)
+
+Voici une liste non-exhaustive des fonctionalités que j'ai développé:
+- Un **système d'export des commandes complètement sur-mesure** afin de:
+  - Envoyer nos commandes automatiquement à nos fournisseurs par courriel ou SMS
+  - Exporter chaque commande au format pDF optimiser pour nos opérations
+  - Une intégration sur-mesure avec notre logiciel de management des routes de livraisons
+  - Exporter des listes optimisées des produits à acheter
+- Un système de **management d'inventaire sur-mesure** pour nos opérations
+- Un système de remises en argent pour notre **programme de fidélité**
+- Un système de produits favoris pour les clients
+- ...
+
+*Toutes les fonctionalités étaient développées en PHP dans un plugin fait sur-mesure*

@@ -6,7 +6,7 @@
 </template>
 
 <style>
-  html,
+html,
 body,
 div,
 form,
@@ -63,7 +63,7 @@ h3 {
   font-size: 30px;
   margin-bottom: 30px;
 }
-p {
+p, ul {
   font-size: 20px;
   margin-bottom: 20px;
 }
