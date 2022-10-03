@@ -3,11 +3,11 @@
 <template>
   <nav>
     <ul>
-      <li><NuxtLink :to="localePath({ name: 'index' })">Home</NuxtLink></li>
-      <li><NuxtLink :to="localePath({ path: '/#portfolio' })">Portfolio</NuxtLink></li>
+      <li><NuxtLink :to="localePath({ name: 'index' })">{{ $t('NavBar.home') }}</NuxtLink></li>
+      <li><NuxtLink :to="localePath({ path: '/#portfolio' })">{{ $t('NavBar.portfolio') }}</NuxtLink></li>
       <li>
         <NuxtLink :to="localePath({ path: '/#contact-me' })" class="contact-me-btn button">
-          Let's Talk
+          {{ $t('NavBar.contact-me') }}
         </NuxtLink>
       </li>
       <li v-if="$i18n.locale !== 'en'"><NuxtLink :to="switchLocalePath('en')">EN</NuxtLink></li>

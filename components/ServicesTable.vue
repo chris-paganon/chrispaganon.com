@@ -1,9 +1,7 @@
 <template>
   <section class="services-section content-section">
-  <h2>What can I do for you?</h2>
-    <p>
-      I specialize in <strong>Wordpress Web Development</strong> but I can also help you with your marketing startegy!
-    </p>
+  <h2>{{ $t('ServicesTable.heading') }}</h2>
+    <p>{{ $t('ServicesTable.sub-heading') }}</p>
     <div class="services-wrapper">
       <div class="service-wrapper">
         <div class="service-title">
@@ -39,9 +37,9 @@
         </ul>
       </div>
     </div>
-    <p><em>No fuss & no extra fees. I am practical and down to earth. I build useful tools to get mesurable results.</em></p>
+    <p><em>{{ $t('ServicesTable.note') }}</em></p>
     <NuxtLink :to="localePath({ path: '/#contact-me' })" class="contact-me-btn button">
-      Let's Talk
+      {{ $t('NavBar.contact-me') }}
     </NuxtLink>
   </section>
 </template>

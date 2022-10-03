@@ -1,11 +1,11 @@
 <template>
   <main>
     <section class="hero-banner">
-      <h1>{{ $t('homepage-h1') }}</h1>
+      <h1>{{ $t('homepage.heading1') }}</h1>
     </section>
     <div class="home-content-wrapper">
       <section class="introduction content-section">
-        <p>{{ $t('homepage-intro') }}</p>
+        <p>{{ $t('homepage.intro') }}</p>
         <img src="/images/me.jpg" alt="me" />
       </section>
       <hr class="separator" />

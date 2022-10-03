@@ -45,14 +45,14 @@ export default {
 
 <template>
   <section id="portfolio" class="portfolio-section-wrapper content-section">
-    <h2 class="portfolio-heading">My Portfolio</h2>
+    <h2 class="portfolio-heading">{{ $t('PortfolioProjects.heading') }}</h2>
     <div :class="`portfolio-intro-wrapper ${viewMoreClass}`">
       <div v-if="! viewMoreOn" class="view-more-overlay"></div>
       <nuxt-content :document="portfolioIntro"></nuxt-content>
     </div>
     <div v-if="! viewMoreOn" class="arrow arrow-down" @click="viewMoreOn = true"></div>
     <div v-if="viewMoreOn" class="arrow arrow-up" @click="viewMoreOn = false"></div>
-    <h3 class="portfolio-sub-heading">Find out more about a few of my projects below:</h3>
+    <h3 class="portfolio-sub-heading">{{ $t('PortfolioProjects.sub-heading') }}</h3>
     <div class="portfolio-wrapper">
       <NuxtLink
         v-for="project in portfolio"

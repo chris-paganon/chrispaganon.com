@@ -5,9 +5,9 @@
     </section>
     <article>
       <ul>
-        <li>From: {{ getProjectData.startDate }}</li>
-        <li>Until: {{ getProjectData.endDate }}</li>
-        <li><a :href="getProjectData.url" target="_blank">Visit the website</a></li>
+        <li>{{ $t('ProjectPage.date-from') }} {{ getProjectData.startDate }}</li>
+        <li>{{ $t('ProjectPage.date-to') }} {{ getProjectData.endDate }}</li>
+        <li><a :href="getProjectData.url" target="_blank">{{ $t('ProjectPage.visit') }}</a></li>
       </ul>
       <nuxt-content :document="projectContent"></nuxt-content>
       <img :src="getProjectData.image" />
