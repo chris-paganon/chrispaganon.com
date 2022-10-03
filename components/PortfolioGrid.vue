@@ -23,7 +23,6 @@ export default {
     sortedPortfolio() {
       let sortedPortfolio = this.portfolio;
       sortedPortfolio = sortedPortfolio.sort((a, b) => {return a.id - b.id});
-      console.log(sortedPortfolio);
       return sortedPortfolio; 
     }
   },
