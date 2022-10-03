@@ -46,10 +46,15 @@ export default {
   cursor: pointer;
 }
 .arrow-down {
-  transform: rotate(45deg);
+  animation: bounce 2s infinite;
 }
 .arrow-up {
   transform: rotate(-135deg);
+}
+@keyframes bounce {
+  0% {transform: rotate(45deg) translate(0, 0);}
+  70% {transform: rotate(45deg) translate(-8px, -8px);}
+  100% {transform: rotate(45deg) translate(0, 0);}
 }
 
 .portfolio-intro-wrapper {
