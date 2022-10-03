@@ -11,7 +11,7 @@
           <label for="name">{{ $t('ContactMe.form.email') }}</label>
           <input id="email" v-model="form.email" type="email" name="email" />
           <label for="name">{{ $t('ContactMe.form.description') }}</label>
-          <textarea id="description" v-model="form.description" name="description" rows="4" placeholder='Something like "I would like to add pictures from my Instagram to my existing website..."'></textarea>
+          <textarea id="description" v-model="form.description" name="description" rows="4" :placeholder="$t('ContactMe.form.description-placeholder')"></textarea>
           <p>{{formResponse}}</p>
           <button class="button">{{ $t('ContactMe.form.button') }}</button>
         </form> 
