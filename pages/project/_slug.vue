@@ -9,7 +9,7 @@
         <li>Until: {{ getProjectData.endDate }}</li>
         <li><a :href="getProjectData.url" target="_blank">Visit the website</a></li>
       </ul>
-      <nuxt-content :document="page"></nuxt-content>
+      <nuxt-content :document="projectContent"></nuxt-content>
       <img :src="getProjectData.image" />
     </article>
   </main>
@@ -20,10 +20,19 @@ import { portfolio } from "~/static/portfolio.js";
 
 export default {
   async asyncData (context) {
-    const { $content } = context;
-    const page = await $content(context.route.path).fetch();
+    const { $content, app } = context;
+    const defaultLocale = app.i18n.defaultLocale;
+    const currentLocale = app.i18n.locale;
+    let path = '';
+
+    if (currentLocale === defaultLocale) {
+      path = `${currentLocale}/${context.route.path}`;
+    } else {
+      path = context.route.path;
+    }
+    const projectContent = await $content(path).fetch();
     return {
-      page
+      projectContent,
     }
   },
   data() {
