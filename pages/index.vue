@@ -29,7 +29,7 @@ export default {
   async asyncData (context) {
     const { $content, app } = context;
     const portfolioIntro = await $content(`${app.i18n.locale}/portfolio-intro`).fetch();
-    const portfolio = await $content(`${app.i18n.locale}/project`).fetch();
+    const portfolio = await $content(`${app.i18n.locale}/project`).sortBy('id').fetch();
     return {
       portfolioIntro,
       portfolio,
