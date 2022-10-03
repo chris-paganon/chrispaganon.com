@@ -79,8 +79,8 @@ ul.project-info {
 }
 
 @media (max-width: 600px) {
-  a,
-  li {
+  .project-info a,
+  .project-info li {
     font-size: 22px;
   }
 }

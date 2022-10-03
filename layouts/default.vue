@@ -87,7 +87,7 @@ textarea {
   h3 {
     font-size: 25px;
   }
-  p {
+  p, ul {
     font-size: 19px;
   }
 }
