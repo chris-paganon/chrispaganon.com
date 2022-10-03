@@ -1,7 +1,7 @@
 ---
 Title: Precious Plastic Montréal
 Description: Local small-scale recycling non-for-profit
-id: 2,
+id: 2
 slug: ppmtl
 url: https://ppmtl.ca
 startDate: "2019-06-01"

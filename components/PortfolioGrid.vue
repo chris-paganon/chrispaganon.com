@@ -1,7 +1,7 @@
 <template>
   <div class="portfolio-wrapper">
     <NuxtLink
-      v-for="project in portfolio"
+      v-for="project in sortedPortfolio"
       :key="project.id"
       ref="portfolioCard"
       class="portfolio-card"
@@ -19,6 +19,14 @@
 <script>
 export default {
   inject: ['portfolio'],
+  computed: {
+    sortedPortfolio() {
+      let sortedPortfolio = this.portfolio;
+      sortedPortfolio = sortedPortfolio.sort((a, b) => {return a.id - b.id});
+      console.log(sortedPortfolio);
+      return sortedPortfolio; 
+    }
+  },
   mounted() {
     // Display hover overlay on scroll on mobile if card is centered
     const portfolioCards = this.$refs.portfolioCard;
