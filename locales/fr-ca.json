@@ -30,7 +30,7 @@
     "form": {
       "name": "Nom:",
       "email": "Courriel:",
-      "description": "Dites-moi en plus à propos de votre projet:",
+      "description": "Donnez-moi plus de précisions à propos de votre projet:",
       "description-placeholder": "Par exemple \"Je voudrais ajouter notre feed instagram à notre site web existant...\"",
       "button": "Envoyer",
       "response": {

@@ -5,6 +5,6 @@ icon: 🏆
 section: services
 ---
 
-- Nouvelles fonctionnalitées
+- Nouvelles fonctionnalités
 - Améliorer la vitesse & SEO
 - Modifications majeures

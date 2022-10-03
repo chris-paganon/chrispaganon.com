@@ -20,7 +20,7 @@ The first hand experience I gained through running a business gives me **a bette
 ![thumbnail Panier Québécois](/images/portfolio/panier-quebecois-thumbnail.jpg)
 
 Here is a non-exhaustive list of features I have developped over the last few years.
-- A f**ully custom orders export** system to:
+- A **fully custom orders export** system to:
   - Send orders automatically to our suppliers by e-mail & SMS
   - Export each orders into a printable PDF list optimized for our operations
   - Custom integration with our fleet managment tool 
