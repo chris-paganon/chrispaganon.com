@@ -4,12 +4,14 @@ Description: Organisation de recyclage de plastique à échelle locale
 id: 2
 slug: ppmtl
 url: https://ppmtl.ca
-startDate: "2019-06-01"
-endDate: "2020-08-01"
+startDate: "Juin 2019"
+endDate: "Août 2020"
 image: /images/portfolio/ppmtl-thumbnail.jpg
 color: 31e0b794
 ---
 
-Precious Plastic Montréal is a non-for-profit that makes local small scale plastic recycling possible. Based on a Danish open-source project, PPMTL builds machines to shred and remelt plastic into new objects.
+Precious Plastic Montréal est une organisation à but non lucratif qui **rend possible le recyclage de plastique à échelle locale**. Basé sur un projet Danois et open-source, PPMTL construit des machines afin de déchiquetter et re-fondre le plastique **afin d'en faire de nouveaux objets**.
 
-After helping to build a few of the machines myself, I got to work on the website. The goal of the web platform is to showcase the community's work and help find new talent.
+Après avoir aider à contruire quelques-unes des machines, j'ai commencé à travailler sur le site web. L'objectif de la platforme est de montrer le travail fait par la communauté et de recruter de nouveaux talents.
+
+![thumbnail Precious Plastic](/images/portfolio/ppmtl-thumbnail.jpg)
