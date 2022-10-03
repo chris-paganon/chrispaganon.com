@@ -9,22 +9,16 @@
     >
       <img :src="project.image" />
       <div class="portfolio-card-text-wrapper">
-        <h3>{{ project.name }}</h3>
-        <p>{{ project.shortDescription }}</p>
+        <h3>{{ project.Title }}</h3>
+        <p>{{ project.Description }}</p>
       </div>
     </NuxtLink>
   </div>
 </template>
 
 <script>
-import { portfolio } from "~/static/portfolio.js";
-
 export default {
-  data() {
-    return {
-      portfolio,
-    };
-  },
+  inject: ['portfolio'],
   mounted() {
     // Display hover overlay on scroll on mobile if card is centered
     const portfolioCards = this.$refs.portfolioCard;

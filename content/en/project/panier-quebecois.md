@@ -1,6 +1,13 @@
 ---
 Title: Panier Québécois
 Description: The 1st online farmer's market in Montréal
+id: 1
+slug: panier-quebecois
+url: https://panierquebecois.ca
+startDate: "2020-04-01"
+endDate: now
+image: /images/portfolio/panier-quebecois-thumbnail.jpg
+color: 5fbb65d1
 ---
 
 Panier Québécois is the first online farmer's market in Montréal. It's also been my full time occupation since April 2020. We started the project with my 3 co-founders to help local farmers markets when COVID started. It quickly grew into a business with over 800 orders every month.

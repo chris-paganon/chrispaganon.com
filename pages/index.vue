@@ -21,11 +21,18 @@
 <script>
 export default {
   name: 'IndexPage',
+  provide() {
+    return {
+      portfolio: this.portfolio,
+    }
+  },
   async asyncData (context) {
     const { $content, app } = context;
     const portfolioIntro = await $content(`${app.i18n.locale}/portfolio-intro`).fetch();
+    const portfolio = await $content(`${app.i18n.locale}/project`).fetch();
     return {
-      portfolioIntro
+      portfolioIntro,
+      portfolio,
     }
   },
 }

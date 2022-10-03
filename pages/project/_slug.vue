@@ -1,23 +1,21 @@
 <template>
   <main>
-    <section class="hero-banner" :style="{backgroundColor: `${getProjectData.color}`}">
-      <h1>{{ getProjectData.name }}</h1>
+    <section class="hero-banner" :style="{backgroundColor: `#${projectContent.color}`}">
+      <h1>{{ projectContent.Title }}</h1>
     </section>
     <article>
       <ul>
-        <li>{{ $t('ProjectPage.date-from') }} {{ getProjectData.startDate }}</li>
-        <li>{{ $t('ProjectPage.date-to') }} {{ getProjectData.endDate }}</li>
-        <li><a :href="getProjectData.url" target="_blank">{{ $t('ProjectPage.visit') }}</a></li>
+        <li>{{ $t('ProjectPage.date-from') }} {{ projectContent.startDate }}</li>
+        <li>{{ $t('ProjectPage.date-to') }} {{ projectContent.endDate }}</li>
+        <li><a :href="projectContent.url" target="_blank">{{ $t('ProjectPage.visit') }}</a></li>
       </ul>
       <nuxt-content :document="projectContent"></nuxt-content>
-      <img :src="getProjectData.image" />
+      <img :src="projectContent.image" />
     </article>
   </main>
 </template>
 
 <script>
-import { portfolio } from "~/static/portfolio.js";
-
 export default {
   name: 'ProjectPage',
   async asyncData (context) {
@@ -35,20 +33,6 @@ export default {
     return {
       projectContent,
     }
-  },
-  data() {
-    return {
-      portfolio,
-    };
-  },
-  computed: {
-    getProjectData() {
-      const projectSlug = this.$route.params.slug;
-      const project = this.portfolio.find((project) => {
-        return project.slug === projectSlug;
-      });
-      return project;
-    },
   },
 };
 </script>
