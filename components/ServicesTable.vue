@@ -3,38 +3,12 @@
   <h2>{{ $t('ServicesTable.heading') }}</h2>
     <p>{{ $t('ServicesTable.sub-heading') }}</p>
     <div class="services-wrapper">
-      <div class="service-wrapper">
+      <div class="service-wrapper" v-for="service in services" :key="service.id">
         <div class="service-title">
-          <p class="icon">&#128640;</p>
-          <p>New Website</p>
+          <p class="icon">{{ service.icon }}</p>
+          <p>{{ service.title }}</p>
         </div>
-        <ul>
-          <li>Get leads & customers</li>
-          <li>Built on a strong base</li>
-          <li>Best practices for Wordpress</li>
-        </ul>
-      </div>
-      <div class="service-wrapper">
-        <div class="service-title">
-          <p class="icon">&#127942;</p>
-          <p>Existing Website</p>
-        </div>
-        <ul>
-          <li>New features</li>
-          <li>Improve speed & SEO</li>
-          <li>Complete overhaul</li>
-        </ul>
-      </div>
-      <div class="service-wrapper">
-        <div class="service-title">
-          <p class="icon">&#128202;</p>
-          <p>Marketing Startegy</p>
-        </div>
-        <ul>
-          <li>Identifying key metrics</li>
-          <li>Social Media strategy</li>
-          <li>Paid media startegy</li>
-        </ul>
+        <nuxt-content :document="service"></nuxt-content>
       </div>
     </div>
     <p><em>{{ $t('ServicesTable.note') }}</em></p>
@@ -43,6 +17,14 @@
     </NuxtLink>
   </section>
 </template>
+
+<script>
+export default {
+  props: {
+    services: Array,
+  },
+}
+</script>
 
 <style scoped>
 .services-wrapper {
@@ -66,11 +48,11 @@
   font-weight: 600;
   margin: auto;
 }
-ul {
+:deep(.nuxt-content ul) {
   padding: 5px 20px 20px 20px;
   font-size: 19px;
 }
-li {
+:deep(.nuxt-content li) {
   margin: 10px 0;
 }
 .icon {
