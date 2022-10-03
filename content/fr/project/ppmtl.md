@@ -7,6 +7,7 @@ url: https://ppmtl.ca
 startDate: "Juin 2019"
 endDate: "Août 2020"
 image: /images/portfolio/ppmtl-thumbnail.jpg
+imageAlt: thumbnail Precious Plastic
 color: 31e0b794
 ---
 

@@ -7,7 +7,7 @@
       class="portfolio-card"
       :to="localePath({ name: 'project-slug', params: {slug: project.slug} })"
     >
-      <img :src="project.image" />
+      <img :src="project.image" :alt="project.imageAlt" />
       <div class="portfolio-card-text-wrapper">
         <h3>{{ project.Title }}</h3>
         <p>{{ project.Description }}</p>

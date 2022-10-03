@@ -7,6 +7,7 @@ url: http://puresante-clinique.ca/
 startDate: "Avril 2019"
 endDate: maintenant
 image: /images/portfolio/pure-sante-thumbnail.jpg
+imageAlt: thumbnail Pure Santé
 color: ead59fe6
 ---
 

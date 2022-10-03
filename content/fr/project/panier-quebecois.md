@@ -7,6 +7,7 @@ url: https://panierquebecois.ca
 startDate: "Avril 2020"
 endDate: maintenant
 image: /images/portfolio/panier-quebecois-thumbnail.jpg
+imageAlt: thumbnail Panier Québécois
 color: 5fbb65d1
 ---
 
