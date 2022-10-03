@@ -50,15 +50,19 @@ export default {
         code: 'en',
         iso: 'en-CA',
         name: 'English',
+        file: 'en-ca.json'
       },
       {
         code: 'fr',
         iso: 'fr-CA',
         name: 'Français',
+        file: 'fr-ca.json'
       },
     ],
     defaultLocale: 'en',
     noPrefixDefaultLocale: true,
+    lazy: true,
+    langDir: './locales/',
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

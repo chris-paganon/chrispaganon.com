@@ -1,13 +1,11 @@
 <template>
   <main>
     <section class="hero-banner">
-      <h1>Freelance Web Developer & Business Owner from Montréal</h1>
+      <h1>{{ $t('homepage-h1') }}</h1>
     </section>
     <div class="home-content-wrapper">
       <section class="introduction content-section">
-        <p>
-          After 2 years building our e-commerce platform at <a href="https://panierquebecois.ca" target="_blank">Panier Québécois</a>, I now help SMBs and non-for profits build or improve their Website.
-        </p>
+        <p>{{ $t('homepage-intro') }}</p>
         <img src="/images/me.jpg" alt="me" />
       </section>
       <hr class="separator" />
