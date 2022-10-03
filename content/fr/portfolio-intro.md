@@ -3,8 +3,8 @@ Title: Portoflio intro
 Description: A quick history of my web developper journey
 ---
 
-FRFR I built my first website in 2016 for a 3D printing University project. Since then I built and managed several websites for local and international projects: a crepes catering project, a B2B massage therapy and ostheopathie service, a local bowling in Colombia and a small-scale plastic recycling community in Montréal.
+**J'ai développé mon premier site web en 2016** pour un projet universitaire d'impression 3D. Depuis, j'ai construit et maintenu **plusieurs sites web** pour des projets locaux et à l'international: un service de massages et ostéopathie pour les entreprises, un service traiteur de crêpes, un bowling local en Colombie et un service de recyclage de plastique communautaire à Montréal.
 
-In 2020, I co-founded the first online farmer's market in Montréal: Panier Québécois. I have been developping, improving and maintaining our website ever since (along managing our business' startegy, marketing and operations with my lovely co-founders).
+En 2020, j'ai **co-fondé le premier marché fermier en ligne à Montréal**: [Panier Québécois](https://panierquebecois.ca). J'ai développé, amélioré et maintenu notre site web depuis (j'ai aussi managé notre stratégie d'affaire, de marketing et nos opérations avec mes sympathiques co-fondateurs).
 
-As our business doesn't require a full-time developper anymore, I am now putting my experience in web development, entrepreneurship and marketing to good use: helping you build your online presence!
+Comme notre entreprise ne nécéssite plus de développeur à plein temps, je mets maintenant **mon expertise** en dévelopment web, entreprenariat et marketing **à votre service!**
