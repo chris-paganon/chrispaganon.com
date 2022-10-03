@@ -8,7 +8,7 @@
     <div v-if="! viewMoreOn" class="arrow arrow-down" @click="viewMoreOn = true"></div>
     <div v-if="viewMoreOn" class="arrow arrow-up" @click="viewMoreOn = false"></div>
     <h3 class="portfolio-sub-heading">{{ $t('PortfolioProjects.sub-heading') }}</h3>
-    <PortfolioGrid :portfolio-intro="portfolioIntro" />
+    <PortfolioGrid />
   </section>
 </template>
 

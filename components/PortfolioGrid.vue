@@ -20,9 +20,6 @@
 import { portfolio } from "~/static/portfolio.js";
 
 export default {
-  props: {
-    portfolioIntro: Object,
-  },
   data() {
     return {
       portfolio,
