@@ -3,7 +3,7 @@
   <h2>{{ $t('ServicesTable.heading') }}</h2>
     <p>{{ $t('ServicesTable.sub-heading.part1') }} <strong>{{ $t('ServicesTable.sub-heading.bold') }}</strong> {{ $t('ServicesTable.sub-heading.part2') }}</p>
     <div class="services-wrapper">
-      <div class="service-wrapper" v-for="service in services" :key="service.id">
+      <div v-for="service in services" :key="service.id" class="service-wrapper">
         <div class="service-title">
           <p class="icon">{{ service.icon }}</p>
           <p>{{ service.title }}</p>
