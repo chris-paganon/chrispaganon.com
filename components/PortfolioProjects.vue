@@ -75,10 +75,10 @@ export default {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: -moz-linear-gradient(to top, rgb(255, 251, 246), transparent); /* FF3.6+ */
-  background-image: -webkit-linear-gradient(top, rgb(255, 251, 246), transparent); /* Chrome10+,Safari5.1+ */
-  background-image: -o-linear-gradient(top, rgb(255, 251, 246), transparent); /* Opera 11.10+ */
-  background-image: linear-gradient(to top, rgb(255, 251, 246), transparent);
+  background: -moz-linear-gradient(top, rgb(255, 251, 246), transparent); /* FF3.6+ */
+  background: -webkit-linear-gradient(top, rgb(255, 251, 246), transparent); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgb(255, 251, 246), transparent); /* Opera 11.10+ */
+  background: linear-gradient(to top, rgb(255, 251, 246), transparent);
   z-index: 10;
 }
 .portfolio-intro {
