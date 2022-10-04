@@ -21,7 +21,7 @@
         <ul>
           <li class="contact-info">
             {{ $t('ContactMe.email-address') }}
-            <a href="mailto:cpaganon@gmail.com">cpaganon@gmail.com</a>
+            <a href="mailto:info@chrispaganon.com">info@chrispaganon.com</a>
           </li>
           <li class="contact-info">
             {{ $t('ContactMe.phone-number') }}
