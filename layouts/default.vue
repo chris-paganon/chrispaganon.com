@@ -43,6 +43,8 @@ caption,
 input, 
 textarea {
   font-family: 'Ubuntu', Serif;
+  font-style: normal;
+  font-weight: normal;
   margin: 0;
 }
 
@@ -57,10 +59,12 @@ h1 {
 }
 h2 {
   font-size: 45px;
+  font-weight: 600;
   margin-bottom: 50px;
 }
 h3 {
   font-size: 30px;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 p, ul {

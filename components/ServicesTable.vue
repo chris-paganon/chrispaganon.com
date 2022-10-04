@@ -44,9 +44,10 @@ export default {
 
 .service-title {
   padding: 20px 20px 5px 20px;
-  font-size: 27px;
-  font-weight: 600;
   margin: auto;
+}
+.service-title p {
+  font-weight: 600;
 }
 :deep(.nuxt-content ul) {
   padding: 5px 20px 20px 20px;
