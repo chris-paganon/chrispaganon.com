@@ -75,10 +75,7 @@ export default {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: -moz-linear-gradient(top, rgb(255, 251, 246), transparent); /* FF3.6+ */
-  background: -webkit-linear-gradient(top, rgb(255, 251, 246), transparent); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgb(255, 251, 246), transparent); /* Opera 11.10+ */
-  background: linear-gradient(to top, rgb(255, 251, 246), transparent);
+  background: linear-gradient(to top, #fffbf6, #fffbf600);
   z-index: 10;
 }
 .portfolio-intro {
