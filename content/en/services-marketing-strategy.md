@@ -1,5 +1,5 @@
 ---
-title: Marketing Startegy
+title: Marketing Strategy
 id: 3
 icon: 📊
 section: services
@@ -7,4 +7,4 @@ section: services
 
 - Identifying key metrics
 - Social Media strategy
-- Paid media startegy
+- Paid media strategy
